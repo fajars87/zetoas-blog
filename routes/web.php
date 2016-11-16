@@ -25,4 +25,5 @@ Route::get('/home', 'HomeController@index');
 Route::group(['middleware'=>['web']],function(){
 	Route::resource('/','PHomeController');
     Route::resource('/post','PPostController');
+    Route::resource('/cat','PCategoryController');
 });
